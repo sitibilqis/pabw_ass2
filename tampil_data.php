@@ -43,7 +43,7 @@
         }
 
         // Query untuk mengambil data dari tabel
-        $query = "SELECT * FROM nama_barang";
+        $query = "SELECT * FROM data";
         $result = mysqli_query($koneksi, $query);
 
         // Memasukkan data dari tabel ke dalam array
