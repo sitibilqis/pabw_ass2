@@ -1,6 +1,6 @@
 <?php
 // Koneksi ke database
-$koneksi = mysqli_connect("localhost", "username", "password", "nama_database");
+$koneksi = mysqli_connect("localhost", "root", "", "lost");
 
 // Periksa koneksi
 if (mysqli_connect_errno()) {
@@ -14,7 +14,7 @@ if (isset($_GET['id'])) {
     $id = mysqli_real_escape_string($koneksi, $_GET['id']);
 
     // Query untuk menghapus data berdasarkan ID
-    $query = "DELETE FROM nama_tabel WHERE id = '$id'";
+    $query = "DELETE FROM nama_barang WHERE id = '$id'";
     
     // Eksekusi query
     if (mysqli_query($koneksi, $query)) {
